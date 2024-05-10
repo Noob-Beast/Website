@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add-Listing</title>
+  <link rel="stylesheet" href="../CSS/AddList.css">
+</head>
+<body>
+  <div class="Add-list-form">
+    <h2>Add List</h2>
+    <form action="listings.html" method="GET" enctype="multipart/form-data">
+      <label for="name">Item Name</label>
+      <input type="text" id="name" name="name" placeholder="Item name" required>
+
+      <label for="item">Item Description</label>
+      <input class="description-div" type="text" id="item" name="item" placeholder="Briefly describe the lost item..." required>
+      
+      <label for="location">Item Found Location</label>
+      <input type="text" id="location" name="location" placeholder="Found location" required>
+      
+      <label for="time">Item Surrender Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="founder">Founder Name</label>
+      <input type="text" id="founder" name="founder" placeholder="Your full name..." required>
+     
+      <label for="tel">Phone Number</label>
+      <input type="tel" name="tel" id="tel" placeholder="Enter number" required>
+
+      <label for="image">Attach Picture</label>
+      <input type="file" id="image" name="image" accept="image/*"> 
+
+      <input type="submit" value="Submit" id="submit-button">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Upload</title>
+</head>
+<body>
+<h2>Upload Image</h2>
+<form id="imageForm">
+    <input type="file" id="imageInput" accept="image/*">
+    <button type="button" onclick="displayImage()">Display Image</button>
+</form>
+<div id="imageContainer"></div>
+
+<script>
+function displayImage() {
+    const fileInput = document.getElementById('imageInput');
+    const file = fileInput.files[0];
+    
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            const imgElement = document.createElement('img');
+            imgElement.src = event.target.result;
+            imgElement.style.maxWidth = '100%';
+            document.getElementById('imageContainer').innerHTML = '';
+            document.getElementById('imageContainer').appendChild(imgElement);
+        };
+        reader.readAsDataURL(file);
+    } else {
+        alert('Please select an image.');
+    }
+}
+</script>
+</body>
+</html>

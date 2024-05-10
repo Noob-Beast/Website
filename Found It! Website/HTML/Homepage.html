@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Found It!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../CSS/Homepage.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--Tab Logo-->
+  <link rel="icon" href="../Images/Found It! Logo - Reimagined.png" type="image/png">
+  <!--Font Styles -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet">
+
+  <!--Script Link -->
+  <script src="https://kit.fontawesome.com/7cdbd4aef5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header class="head">
+  <nav class="nav-bar">
+    <div class="nav-div">
+      
+      <div onclick="window.location.reload();" class="logo"> <a href="#"><img class="logo-foundIt" 
+        src="../Images/Found It! Logo - Reimagined.png"></a></div>
+        <h1>FOUND IT!</h1>
+      
+      <div class="button-div">
+      <ul class="buttons">
+        
+        <button class="hide-on-mobile" id="nav-login"><a href="Login.html">SIGN IN</a></button>
+        <button class="hide-on-mobile" id="nav-register"><a href="Register.html">SIGN UP</a></button>
+        
+          <label onclick=showSidebar()>
+            <button class="hamburger-bar"><i class="fa-solid fa-bars"></i></button>
+          </label>
+
+          <ul class="sidebar">
+            <label onclick=hideSidebar()>
+            <button class="cancel-sidebar"><i class="fa-solid fa-x"></i></button>
+            </label>
+            
+            <div class="sidebar-buttons">
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="AddList.html" >Add Listing</a></li>
+            </div>
+            
+          </ul>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  
+
+    <div class="front-page">
+      <h2 class="Slogan">Feeling misplaced? Don't worry, your lost item is probably feeling the same way.</h2>
+      <p class="paragraph-head">We reunite lost items with their rightful owners. No judgment, even if it's that embarrassing keychain.</p>
+      <button class="Add-list" id="Add-list"><a href="Login.html" target="_blank">ADD LISTING</a>
+    </div>
+    
+  </header>
+
+  <div class="main-how-to-page" >
+    <div class="how-to-page">
+    <h2 id="how" class="how-found-it">HOW FOUND IT! CAN HELP YOU</h2>
+    <p class="how-it-works">How it works</p>
+    </div>
+
+    <div class="three-how-to">
+    <div class="clipboard-div">
+      <button class="clipboard-icon" id="c-icon1"><i class="fa-solid fa-clipboard-list" id="clip"></i></button>
+      <h3 class="clipboard-h3" id="c-head1">Report a lost or found item</h3>
+      <div class="clipboard-description" id="c-para1">
+        Create an account on our website. Then, click Add Listing. Next, fill out the form with the necessary details. 
+        After that, your request will be processed by the admin, who will post it on the listings page.
+      </div>
+    </div>
+
+    <div class="clipboard-div">
+      <button class="clipboard-icon" id="c-icon2"><i class="fa-solid fa-rectangle-list" id="list"></i></button>
+      <h3 class="clipboard-h3" id="c-head2">Check the Listings Page</h3>
+      <div class="clipboard-description" id="c-para2">
+        The listings page will be displayed once you log in. 
+        It shows you what has been lost and what has been found.
+
+      </div>
+    </div>
+
+    <div class="clipboard-div" >
+      <button class="clipboard-icon" id="c-icon3"><i class="fa-solid fa-handshake" id="shake"></i></i></button>
+      <h3 class="clipboard-h3" id="c-head3">Trust the Process</h3>
+      <div class="clipboard-description" id="c-para3">
+        Wait for the administrators to review and approve your listing. 
+        Please check our website on a regular basis for updates on your listing.
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="about-us-head">
+
+    <h3 id="about" class="h3-about-us">About Us</h3>
+
+    <div class="about-us-separator">
+
+      <div class="about-us-div">
+        <div class="card-body">
+          <img class="about-us-img" src="../Images/About Us Picture/Barredo.jpg">
+          <h3 class="about-us-name">Justine Joey Barredo</h3>
+          <h5 class="about-us-description">Team Leader</h5>
+          <p class="about-us-email">barredojustinejoey_bscs@plmun.edu.ph</p>
+          <h3></h3>
+          <button class="background-icon"><a class="facebook-icon" href="https://www.facebook.com/justinebarredo360?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></button>
+        </div>
+      </div>
+
+      <div class="about-us-div">
+        <div class="card-body">
+          <img class="about-us-img" src="../Images/About Us Picture/De Castro.jpeg">
+          <h3 class="about-us-name">Jojay De Castro</h3>
+          <h5 class="about-us-description">Web Developer</h5>
+          <p class="about-us-email">decastrojojay_bscs@plmun.edu.ph</p>
+          <h3></h3>
+          <button class="background-icon"><a class="facebook-icon" href="#"><i class="fab fa-facebook-f"></i></a></button>
+        </div>
+      </div>
+
+      <div class="about-us-div">
+        <div class="card-body">
+          <img class="about-us-img" src="../Images/About Us Picture/Huet.jpg">
+          <h3 class="about-us-name">Angelo Huet</h3>
+          <h5 class="about-us-description">Web Developer</h5>
+          <p class="about-us-email">huetangelo_bscs@plmun.edu.ph</p>
+          <h3></h3>
+          <button class="background-icon"><a class="facebook-icon" href="https://www.facebook.com/Yuukii.Tensu"><i class="fab fa-facebook-f"></i></a></button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-us-separator-2">
+
+    <div class="about-us-div-2">
+      <div class="card-body-2">
+         <img class="about-us-img" src="../Images/About Us Picture/Manrique.jpeg">
+         <h3 class="about-us-name">Angelo Lann Manrique</h3>
+         <h5 class="about-us-description">Web Researcher</h5>
+         <p class="about-us-email">manriqueangelolann_bscs@plmun.edu.ph</p>
+         <h3></h3>
+         <button class="background-icon"><a class="facebook-icon" href="https://www.facebook.com/manrique.angelolanm?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></button>
+      </div>
+    </div>    
+
+    <div class="about-us-div-2">
+      <div class="card-body-2">
+        <img class="about-us-img" src="../Images/About Us Picture/Sarcilla.png">
+        <h3 class="about-us-name">Ellie John Sarcilla</h3>
+        <h5 class="about-us-description">Web Researcher</h5>
+        <p class="about-us-email">sarcillaelliejohn_bscs@plmun.edu.ph</p>
+        <h3></h3>
+        <button class="background-icon"><a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100007996665279"><i class="fab fa-facebook-f"></i></a></button>
+      </div>
+    </div>
+
+    <div class="about-us-div-2">
+      <div class="card-body-2">
+        <img class="about-us-img" src="../Images/About Us Picture/Villardo.jpg">
+        <h3 class="about-us-name">Jojit Villardo Jr</h3>
+        <h5 class="about-us-description">Web Researcher</h5>
+        <p class="about-us-email">villardojojit_bscs@plmun.edu.ph</p>
+        <h3></h3>
+        <button class="background-icon"><a class="facebook-icon" href="https://m.facebook.com/profile.php?id=100002251068961"><i class="fab fa-facebook-f"></i></a></button>
+      </div>
+    </div>
+
+    </div>
+    
+  </div>
+
+  
+
+ <footer>
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Navigation</h3>
+      <ul class="footer-nav">
+        <li class="footer-nav"><a href="#" >Home</a></li>
+        <li class="footer-nav"><a href="#how">How</a></li>
+        <li class="footer-nav"><a href="#about">About</a></li>
+        <li class="footer-nav"><a href="Login.html">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>
+        Found It! is created with the help of these up-and-coming students from 
+        Pamantasan ng Lungsod ng Muntinlupa. It is also a pre-requisite in the course 
+        Human-Computer Interaction that is handled by Mr. Edmond Santiago.
+      </p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Connect With Us</h3>
+      <ul class="social-icons">
+        <li><a href="https://www.facebook.com/plmunofficial"><i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add-Listing</title>
+  <link rel="stylesheet" href="../CSS/AddList.css">
+  <link rel="icon" href="../Images/Found It! Logo.png" type="image/x-icon">
+  <link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="logo">
+    <a href="../HTML/Homepage.html"><img src="../Images/Found It! Logo - Reimagined.png"></a>
+    <h1>FOUND IT!</h1>
+  </div>
+
+  <div class="Add-list-form">
+    <h2>Add List</h2>
+    <form action="#">
+
+      <label for="name">Item Name</label>
+      <input type="text" id="name" name="name" placeholder="Item name" required>
+
+      <label for="item">Item Description</label>
+      <input class="description-div" type="text" id="item" name="item" placeholder="Briefly describe the lost item..." required>
+      
+      <label for="text">Item Found Location</label>
+      <input type="text" placeholder="Found location" required>
+      
+      <div class="email-div">
+      <label for="appt" id="appt">Item Surrender Time</label>
+      <input class="input-time" type="time" id="appt" name="appt" required />
+      </div>
+
+      <label for="name">Founder Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name..." required>
+     
+      <div class="number-div">
+      <label for="tel">Phone Number</label>
+      <input type="tel" name="tel" id="tel" placeholder="Enter number" required>
+      </div>
+     
+      <div class="picture-div">
+        <input type="file" id="file" hidden="hidden">
+        <button type="button" id="file-button">UPLOAD FILE</button>
+        <span id="custom-text">No File Chosen</span>
+        </div>
+
+
+          <label for="button">Status</label>
+          <div class="status">
+          <button class="button-lost">LOST</button>
+          <button class="button-found">FOUND</button>
+        </div>
+
+        <input type="submit" value="Submit" id="submit-button">
+      
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    const fileBtn = document.getElementById("file");
+    const customBtn = document.getElementById("file-button");
+    const customTxt = document.getElementById("custom-text");
+
+    customBtn.addEventListener("click", function() {
+      fileBtn.click();
+    })
+
+    fileBtn.addEventListener("change", function() {
+      if (fileBtn.value) {
+        customTxt.innerHTML = fileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+      }else {
+        customTxt.innerHTML = "No file chosen";
+      }
+    })
+
+  </script>
+
+</body>
+</html>

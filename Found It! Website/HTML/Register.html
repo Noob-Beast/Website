@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Register.css">
+    <link rel="icon" href="../Images/Found It! Logo.png" type="image/x-icon">
+    <link href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=erode@1&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+    <title>Register Page</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="../HTML/Homepage.html"><img src="../Images/Found It! Logo - Reimagined.png"></a>
+        <h2>FOUND IT!</h2>
+      </div>
+    <div class="register-container">
+       
+        <form action="../PHP/Connection.php" method="POST">
+
+            <h1>Registration</h1>
+
+            <div class="form-row">
+                <input type="text" id="nameInput" class="form-input" placeholder="Fullname" name="Fullname" required>
+                <label for="name-Input" class="form-label">Full Name</label>
+            </div>
+
+            <div class="form-row">
+                <input type="text" id="userInput" class="form-input" placeholder="Username" name="Username" required>
+                <label for="userInput" class="form-label">Username</label>
+            </div>
+
+            <div class="form-row">
+                <input type="password" id="passwordInput" class="form-input" placeholder="Password" name="Password" required>
+                <label for="passwordInput" class="form-label">Password</label>
+            </div>
+            
+            <button type="submit" class="submit-botton">Register</button>
+        
+        </form>
+        
+        <p class="login-text">Already have an account? <a href="Login.html" target="_self">Login</a></p>
+    
+    </div>
+</body>
+</html>

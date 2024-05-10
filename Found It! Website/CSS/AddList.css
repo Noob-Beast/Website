@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  background-color: black;
+  margin-top: 0;
+  background-image: url(../Images/Dark\ Blue\ Triangle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140vh;
+}
+
+.logo {
+  position: absolute;
+  top: -1.06%;
+  left: 1.1%; 
+  z-index: 1000;
+}
+.logo img {
+  margin-top: -8.5px;
+  margin-left: -19px;
+  width: 23vh; 
+  height: 23vh; 
+  display: block;
+}
+
+h1 {
+  font-family: 'Tanker', sans-serif;
+  color: #15F5BA;
+  font-size: 8vh;
+  letter-spacing: 2px;
+  margin: -107px 0 0 95px;
+}
+
+.Add-list-form {
+  font-family: 'General Sans', sans-serif;
+  max-width: 400px;
+  margin: 150px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-family: 'General Sans', sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+}
+
+#item {
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #66FCF1;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 150px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+  display: block;
+}
+input[type="submit"]:hover {
+  background-color: #0ed8ee;
+}
+
+.number-div {
+  margin-bottom: 20px;
+}
+
+.picture-div {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="tel"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#file-button {
+  font-family: 'General Sans', sans-serif;
+  padding: 10px;
+  color: black;
+  background-color: #66FCF1;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#file-button:hover{
+  background-color: #0ed8ee;
+}
+
+#custom-text {
+  margin-left: 10px;
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-lost {
+  font-family: 'General Sans', sans-serif;
+  padding: 10px;
+  color: black;
+  background-color: #66FCF1;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 190px;
+}
+
+.button-found {
+  font-family: 'General Sans', sans-serif;
+  padding: 10px;
+  color: black;
+  background-color: #66FCF1;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 190px;
+}
+
+.button-lost:hover {
+  background-color:  #0ed8ee;
+}
+
+.button-lost:active {
+  background-color: #f0e7e7;
+}
+
+.button-found:hover {
+  background-color: #0ed8ee;
+}
+
+.button-found:active {
+  background-color: #f0e7e7;
+}
+
+#submit-button {
+  font-family: 'General Sans', sans-serif;
+  margin-top: 0;
+}
+
+@media (max-width: 780px) {
+  body {
+    height: 100vh;
+  }
+
+  .Add-list-form {
+    width: 200px;
+  }
+
+  input[type="submit"] {
+    margin-left: 50px;
+  }
+}

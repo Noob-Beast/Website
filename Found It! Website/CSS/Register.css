@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(#0B0C10, #211951,#0B0C10);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.register-container {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background: white;
+}
+
+h1{
+    font-family: 'Erode', serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.form-row {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    box-sizing: border-box;
+    padding:2rem 1rem 0.5rem 0.5rem;
+    border: 0;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: transparent;
+    display: none;
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom: 2px solid #19c7d9;
+}
+
+.form-label {
+    position: absolute;
+    color: gray;
+    bottom: 0.5rem;
+    left: 0;
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.form-input:focus~.form-label, .form-input:not(:placeholder-shown)~.form-label {
+    opacity: .65;
+    transform: scale(.85) translateY(-1.3rem);
+}
+
+.submit-botton {
+    font-family: 'Satoshi', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    background: #19c7d9;
+    color: white;
+    border: 0;
+}
+
+.submit-botton:hover {
+    cursor: pointer;
+    background: #0ed8ee;
+    text-decoration: none;
+}
+
+.login-text{
+    color: gray;
+    display: block;
+    margin-top: 2rem;
+}
+
+.login-text >a{
+    text-decoration: none;
+    color: #19c7d9;
+}
+
+.logo {
+    position: absolute;
+    top: -1.06%;
+    left: 1.1%; 
+    z-index: 1000;
+}
+
+.logo img {
+    margin-top: -8.5px;
+    margin-left: -19px;
+    width: 23vh; 
+    height: 23vh; 
+    display: block;
+}
+
+h2 {
+    font-family: 'Tanker', sans-serif;
+    color: #15F5BA;
+    font-size: 8vh;
+    letter-spacing: 2px;
+    margin: -107px 0 0 95px;
+  }
+
+
+
